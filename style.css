@@ -92,6 +92,11 @@ i {
   color: rgb(138, 93, 242);
 }
 @media screen and (max-width: 767px) {
+  .container {
+    position: absolute;
+    top: 30%;
+    left: 60px;
+  }
   .card-header {
     display: flex;
     flex-direction: column;

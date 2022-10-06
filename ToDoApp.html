@@ -24,12 +24,7 @@
       rel="stylesheet"
     />
     <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>ToDoApp</title>
@@ -61,8 +56,20 @@
                 </form>
               </div>
               <div class="card">
-                <div class="card-header controls">
-                  <div class="filters">
+                <div class="card-header controls navbar navbar-expand-md">
+                  <button 
+                    class="navbar-toggler" 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#filters1"
+                    aria-controls="filters1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+
+                  <div class="filters collapse navbar-collapse" id="filters1">
                     <span class="active" id="all"> All Tasks</span>
                     <span id="pending"> Non Completed</span>
                     <span id="completed"> Completed</span>
@@ -77,7 +84,7 @@
                 </div>
                 <ul id="task-list" class="list-group list-group-flush"></ul>
               </div>
-            </div>
+
           </div>
         </div>
       </div>
